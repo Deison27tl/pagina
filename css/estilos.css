@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100 vh;
+    background-color: white;
+}
+header{
+    background:rgb(255, 182, 47);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand{
+    color: rgb(0, 255, 115);
+    margin-left: 30px;
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px #000000;
+}
+header > img{
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+}
+ 
+  .btn {
+    box-sizing: content-box;
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: var(--theme-color,rgb(0, 255, 115));
+      color: white;
+      border-style: none;
+      font-weight: 200;
+  }
+  .btn:visited{
+      color: white;
+  }
+  .btn:hover {
+    transform: scale(1.05);
+      cursor: pointer;
+    font-weight: 400;
+  }
+
+  .sr-only {
+      position: absolute;
+      left: -10000px;
+      width: 1px;
+      height: 1px;
+      top: auto;
+      overflow: hidden;
+  }
+
+
+  .caja-titulo {
+    background: rgb(229, 233, 224);
+  }
+
+  .caja-precio {
+    font-size: 1.6em;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+  .caja-lista {
+    list-style-type: none;
+  }
+
+  .caja-btn {
+    margin: 20px 0;
+  }
+ 
+
+    .caja {
+          width: 100% ;
+          height: 30%;
+          margin-right: 10px;
+          text-align: center;
+          background-color:white;
+          
+      
+      }
+  
+ 
+ .caja > img{
+     width: 160px;
+     height: 100px;
+ }
+ 
+
+  #precios-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  
+  }
+  #productos {
+    padding-top: 75px;
+    margin-top: -75px;
+  }
+  #productos2 {
+    padding-top: 90px;
+    margin-top: -75px;
+  }
+  hr {
+    border-color: red;
+  }
+  .menu{
+    position: relative;
+    right: 0;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .menu:hover{
+    cursor: pointer;
+  }
+  .desplegable{
+    min-height: 250px;
+    max-width: inherit;
+    border: 1px solid black;
+position: absolute;
+    background-color: white;
+    right: 0;
+    display: none;
+    padding: 15px;
+   
+  }
+  .desplegable th{
+
+    border-bottom: 1px solid black;
+  }
+  .menu:hover .desplegable{
+    display: flex;
+    cursor: default;
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .vaciar_carrito{
+    border: none;
+    background-color: var(--theme-color,rgb(0, 255, 115));
+    color: white;
+    padding: 10px;
+  }
+  .vaciar_carrito:hover{
+    width: 100%;
+     background:rgb(255, 182, 47);
+
+  }
+  @media(max-width:500px){
+
+    .header{
+      display: block;
+     width: 100%;
+
+    }
+   .brand{
+    font-size: 30px;
+
+    }
+    #precios-contenedor {
+      display: block;
+      
+    
+    }
+  }
+ 
